@@ -85,8 +85,8 @@ class Alarm {
 
         if (this.elapsedTime === this.time) {
           this.timerRunning = false;
-          this.onTimeout();
           this.clearTimer();
+          this.onTimeout();
         } else {
           this.onTick();
         }
